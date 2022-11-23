@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Send Email Using Aws SES</title>
+</head>
+<body>
+	<form action="#" th:action="@{/send}" th:object="${email}" method="post">
+		<div class="form-group">
+			<label>Enter Recepient Email</label> <input type="email" name="to"
+				placeholder="Enter recepient email" class="form-control">
+		</div>
+		<div class="form-group">
+			<label>Enter Subject</label> <input type="text" name="subject"
+				placeholder="Enter subject" class="form-control">
+		</div>
+
+		<div class="footer-body">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+	</form>
+</body>
+</html>
